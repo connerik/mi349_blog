@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
-    
+    <header>Ike Conner</header>
+    <h1>Welcome to my blog!</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h2>Contact</h2>
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+    </form>
+    <form>
+        <label for="email">Email: </label>
+        <input type="text" name="email">
+    </form>
+    <form>
+        <label for="reason">Reason for contact: </label>
+        <select id="reason" name="reason_select">
+            <option value="hi">Saying hi</option>
+            <option value="contractor">Looking for a contractor</option>
+            <option value="interview">Interested in an interview</option>
+        </select>
+    </form>
+    <form>
+        <textarea id="opentext" name="opentext_message" rows="5" cols="40" placeholder="Additional information"></textarea>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
