@@ -11,9 +11,20 @@ p{
     line-height: 1.4em;
 }
 
-.namecard{
+header{
     font-size: large;
     font-family: cursive;
+}
+
+a[href="index.html"]{
+    background-color: white;
+}
+a[href="about.html"]{
+    background-color: white;
+}
+
+a[href="contact.html"]{
+    background-color: white;
 }
 
 #post1{
