@@ -16,7 +16,7 @@ p{
     font-family: cursive;
 }*/
 
-a[href="index.html"]{
+/*a[href="index.html"]{
     background-color: white;
 }
 a[href="about.html"]{
@@ -26,7 +26,7 @@ a[href="about.html"]{
 a[href="contact.html"]{
     background-color: white;
 }
-
+*/
 #post1{
     border-top: 5px dotted black;
     display: flex;
@@ -63,15 +63,15 @@ article:nth-of-type(2){
 }
 
 #title{
-    background-color: lightsteelblue;
+    background-color: #adffc3;
 }
 
 #categories{
-    background-color: lightskyblue;
+    background-color: #adffc3;
 }
 
 tr{
-    background-color: lightblue;
+    background-color: #adffc3;
 }
 
 .japanstats{
@@ -104,6 +104,7 @@ tr{
     border-style: solid;
     padding: 20px;
     max-width: 100%;
+    display: block;
 }
 
 #hobbies{
@@ -169,11 +170,14 @@ tr{
 header {
     font-size: large;
     font-family: cursive;
-    background: #011936;
+    background: #3EB489;
     color: #f3f3f3;
     display: flex;
     justify-content: space-between;
     padding: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -192,6 +196,131 @@ header ul li {
 }
 
 header a {
-  color: #00139f;
+  color: #f3f3f3;
   text-decoration: none;
+}
+
+img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.table-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0;
+  width: 100%;
+  display: block;
+}
+
+.japanstats {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px;
+  background-color: #6dd19c;
+}
+
+.japanstats th,
+.japanstats td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+.japanstats th {
+  background-color: #6dd19c;
+  font-weight: bold;
+}
+
+.japanstats tr:nth-child(even) {
+  background-color: #e8faea;
+}
+
+@media (max-width: 600px) {
+  #post1 {
+    flex-direction: column;
+  }
+
+  article:nth-of-type(2) {
+    position: static;
+    top: auto;
+    left: auto;
+  }
+
+  .japanstats {
+    font-size: 0.8em;
+  }
+
+  #hobbies {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  #hobbies {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #caption {
+    left: 0;
+    top: 50px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 901px) {
+  #post1 {
+    flex-direction: row;
+  }
+
+  #hobbies {
+    margin-left: 400px;
+    text-align: left;
+  }
+
+  #caption {
+    left: 20px;
+    top: 120px;
+    text-align: left;
+  }
+
+  img {
+    max-width: 500px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  header ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 }
