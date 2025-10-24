@@ -11,10 +11,10 @@ p{
     line-height: 1.4em;
 }
 
-header{
+/*header{
     font-size: large;
     font-family: cursive;
-}
+}*/
 
 a[href="index.html"]{
     background-color: white;
@@ -81,7 +81,7 @@ tr{
 
 }
 
-.menu{
+/*.menu{
     font-family: cursive;
     background-color: lightblue;
     position: sticky;
@@ -92,7 +92,7 @@ tr{
     top: 30px;
     left: 30px;
 }
-
+*/
 .img-container{
     background-image: url(image239874.jpg);
     background-size: cover;
@@ -103,6 +103,7 @@ tr{
     border: 5px black;
     border-style: solid;
     padding: 20px;
+    max-width: 100%;
 }
 
 #hobbies{
@@ -162,4 +163,35 @@ tr{
     margin:10px;
     border:10px;
     padding:10px;
+}
+
+/*responsive designs*/
+header {
+    font-size: large;
+    font-family: cursive;
+    background: #011936;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+header a {
+  color: #00139f;
+  text-decoration: none;
 }
